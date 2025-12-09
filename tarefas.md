@@ -31,11 +31,11 @@
 | 26 | Manuella Thomaz Lino                             | Sistema             |                                                      |
 | 34 | Raphaella Vasquez Elias e Silva                  | Sistema             |                                                      |
 | 16 | João Pedro da Silva Guimarães                    | Sistema             |                                                      |
-| 2  | Ana Clara Lanes Moura                            | Personagem          |                                                      |
-| 4  | Amaldo Oliveira Meirelles                        | Personagem          |                                                      |
-| 15 | Isadora Figueira Faya                            | Personagem          |                                                      |
-| 22 | Leticia dos Santos Silva Bastos                  | Personagem          |                                                      |
-| 23 | Livia Barbosa Parente                            | Personagem          |                                                      |
-| 27 | Maria Eduarda Elizeu Soares                      | Personagem          |                                                      |
-| 30 | Miguel Ferreira Ribeiro Nunes                    | Personagem          |                                                      |
-| 39 | Vitória Coutinho Reis                            | Personagem          |                                                      |
+| 2  | Ana Clara Lanes Moura                            | Personagem          |Métodos de exibição                                   |
+| 4  | Amaldo Oliveira Meirelles                        | Personagem          |Colocando os ataques dos personagens                  |
+| 15 | Isadora Figueira Faya                            | Personagem          |Escrevendo o quiz de acordo com a história            |
+| 22 | Leticia dos Santos Silva Bastos                  | Personagem          |Métodos de exibição                                   |
+| 23 | Livia Barbosa Parente                            | Personagem          |Ajeitando nosso diagrama de classe                    |
+| 27 | Maria Eduarda Elizeu Soares                      | Personagem          |Ajeitando nosso diagrama de classes                   |
+| 30 | Miguel Ferreira Ribeiro Nunes                    | Personagem          |Colocando o sistema de atribuição de atributos        |
+| 39 | Vitória Coutinho Reis                            | Personagem          |Métodos de exibição                                   |
