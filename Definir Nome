@@ -1,0 +1,56 @@
+public string DefinirNome()
+    {
+        string temp;
+        
+        do
+        {
+            Console.WriteLine("*** - Olá, bem vindo a esse novo mundo? Como posso te chamar nessa história? \nDigite um nome com até 15 caracteres:");
+            temp = Console.ReadLine();
+        } while (string.IsNullOrWhiteSpace(temp) || temp.Length > 15);
+        
+        temp = char.ToUpper(temp[0]) + temp.Substring(1).ToLower();
+        Nome = temp; 
+        return Nome;
+    }
+        
+
+    public void DefinirGenero()
+    {
+        do
+        {
+            Console.WriteLine("Com qual gênero você se identifica?\n1- Feminino\n2- Masculino");
+            GeneroEscolha = Console.ReadLine();
+            Console.Clear();
+
+            if (GeneroEscolha == "1" || GeneroEscolha == "2")
+            {
+                Artigo = GeneroEscolha == "1" ? "a" : "o";
+                Pronome = Artigo == "a" ? "la" : "le";
+                Possessivo = Artigo == "a" ? "dela" : "dele";
+            }
+            else
+            {
+                Console.WriteLine("Opção inválida.");
+            }
+        } while (GeneroEscolha != "1" && GeneroEscolha != "2");
+    }
+
+    public void ContagemQuiz(ref string resp, ref int pontosGuerreiro, ref int pontosArqueiro, ref int pontosMago)
+    {
+        do
+        {
+            resp = Console.ReadLine();
+            Console.Clear();
+        
+            switch (resp)
+            {
+                case "1": pontosGuerreiro++; break;
+                case "2": pontosArqueiro++; break;
+                case "3": pontosMago++; break;
+                default:
+                    Console.WriteLine("Resposta inválida!\nSempre tenha certeza de quem você é.");
+                    break;
+            }
+
+        } while (resp != "1" && resp != "2" && resp != "3");    
+    }
