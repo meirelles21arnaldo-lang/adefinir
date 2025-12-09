@@ -1,0 +1,95 @@
+    public Personagem Quiz()
+    {
+        int pontosGuerreiro = 0;
+        int pontosArqueiro = 0;
+        int pontosMago = 0;
+        string resp = "";
+        string nomeTemporario = this.Nome; 
+
+        // --- Perguntas do Quiz ---
+        
+        while (resp != "1" || resp != "2" || resp "3")
+        {
+        Console.WriteLine("Jorlan - Qual foi o momento mais marcante da sua história?");
+        Console.WriteLine("1 - Quando defendi meu pelotão sozinho contra aqueles Drows. Ali descobri quem eu era.");
+        Console.WriteLine("2 - A primeira vez que percebi que não precisava de ninguém me dizendo o que fazer.");
+        Console.WriteLine("3 - O instante em que vi magia pela primeira vez. Foi como compreender um novo idioma do universo.");
+        ContagemQuiz(ref resp, ref pontosGuerreiro, ref pontosArqueiro, ref pontosMago);
+        }
+
+        while (resp != "1" || resp != "2" || resp "3")
+        {
+        Console.WriteLine("Jorlan - Qual foi a melhor fase da sua vida?");
+        Console.WriteLine("1 - Agora. Cada desafio me deixa mais forte.");
+        Console.WriteLine("2 - Provavelmente agora. Não porque tudo esteja perfeito, mas porque finalmente escolho meu próprio caminho.");
+        Console.WriteLine("3 - “A melhor fase foi quando eu podia ler em paz, sem interrupções.");
+        ContagemQuiz(ref resp, ref pontosGuerreiro, ref pontosArqueiro, ref pontosMago);
+        }
+        
+        while (resp != "1" || resp != "2" || resp "3")
+        {
+        Console.WriteLine("Jorlan - Quais são os seus valores mais importantes?");
+        Console.WriteLine("1 - Honra e lealdade.");
+        Console.WriteLine("2 - Liberdade e escolhas bem feitas.");
+        Console.WriteLine("3 - Conhecimento e busca honesta pela verdade.");
+        ContagemQuiz(ref resp, ref pontosGuerreiro, ref pontosArqueiro, ref pontosMago);
+        }
+        
+        while (resp != "1" || resp != "2" || resp "3")
+        {
+        Console.WriteLine("Jorlan - Como você lida com o fracasso?");
+        Console.WriteLine("1 - Caio, levanto, continuo meu caminho. Simples.");
+        Console.WriteLine("2 - Reviso, ajusto, tento de novo. E faço piada no processo.");
+        Console.WriteLine("3 - Analiso, registro e tento novamente com uma abordagem diferente.");
+        ContagemQuiz(ref resp, ref pontosGuerreiro, ref pontosArqueiro, ref pontosMago);        
+        }
+        
+        while (resp != "1" || resp != "2" || resp "3")
+        {
+        Console.WriteLine("Jorlan - Qual é o seu maior medo?");
+        Console.WriteLine("1 - Falhar com alguém que confia em mim.");
+        Console.WriteLine("2 - Depender de alguém… e essa pessoa me deixar na mão.");
+        Console.WriteLine("3 - Perder o controle e ferir inocentes.");
+        ContagemQuiz(ref resp, ref pontosGuerreiro, ref pontosArqueiro, ref pontosMago);
+        }
+        
+        while (resp != "1" || resp != "2" || resp "3")
+        {
+        Console.WriteLine("Jorlan - O que te faz sentir verdadeiramente feliz?");
+        Console.WriteLine("1 - Ver meus companheiros seguros… e uma boa luta.");
+        Console.WriteLine("2 - Aquele silêncio perfeito depois de um disparo certeiro.");
+        Console.WriteLine("3 - Descobrir algo novo. Mesmo que seja pequeno.");
+        ContagemQuiz(ref resp, ref pontosGuerreiro, ref pontosArqueiro, ref pontosMago);
+        }
+        
+        while (resp != "1" || resp != "2" || resp "3")
+        {
+        Console.WriteLine("Jorlan - Como você se reconecta consigo mesmo em momentos de crise?");
+        Console.WriteLine("1 - Treino até o corpo parar de pensar.");
+        Console.WriteLine("2 - Sumo por umas horas. Só eu e o vento.");
+        Console.WriteLine("3 - Eu paro tudo, respiro fundo. Isso me acalma.");
+        ContagemQuiz(ref resp, ref pontosGuerreiro, ref pontosArqueiro, ref pontosMago);
+        }
+        
+        // --- Determinação da Classe ---
+        Personagem Jogador;
+
+        if (pontosGuerreiro > pontosArqueiro && pontosGuerreiro > pontosMago) {
+            Jogador = new Guerreiro();
+        }
+        else if (pontosArqueiro > pontosGuerreiro && pontosArqueiro > pontosMago) {
+            Jogador = new Arqueiro(); 
+        }
+        else {
+            Jogador = new Mago();
+        }
+
+        // Transfere os metadados para o novo objeto Jogador
+        Jogador.Nome = nomeTemporario;
+        Jogador.Artigo = this.Artigo;
+        Jogador.Pronome = this.Pronome;
+        Jogador.Possessivo = this.Possessivo;
+        
+        return Jogador;
+    }
+  
