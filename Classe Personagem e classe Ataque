@@ -1,0 +1,30 @@
+public abstract class Personagem
+{
+    // para os Personagens
+	protected int fortitude { get; set; } = 0;
+	protected int agilidade { get; set; } = 0;
+	protected int sabedoria { get; set; } = 0;
+	protected int forca { get; set; } = 0;
+	protected int hp { get; set; }
+	protected int classearmadura { get; set; }
+
+    //os ataques
+	public Ataque Ataque1 { get; set; }
+	public Ataque Ataque2 { get; set; }
+	
+	//Para história
+	public string Artigo { get; protected set; }
+    public string GeneroEscolha { get; protected set; }
+    public string Pronome { get; protected set; }
+    public string Possessivo { get; protected set; }
+    public string Nome { get; protected set; } 
+
+	public class Ataque
+	{
+		public int dano;
+		public int pa;
+		public string nome;
+		public int custo;
+		public string alcance; //curto ou medio
+	}
+}
