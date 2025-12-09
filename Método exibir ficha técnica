@@ -1,0 +1,14 @@
+    public void Exibir()
+    {
+        Console.WriteLine($"\n--- Ficha de Personagem ---");
+        Console.WriteLine($"Nome: {Nome}");
+        Console.WriteLine($"Classe: {this.GetType().Name} ({Artigo} {this.GetType().Name})");
+        Console.WriteLine($"Pronomes: {Pronome}/{Possessivo}");
+        Console.WriteLine($"HP: {hp}");
+        Console.WriteLine($"Classe de Armadura: {classearmadura}");
+        Console.WriteLine($"Sabedoria: {sabedoria}");
+        Console.WriteLine($"Força: {forca}");
+        Console.WriteLine($"Agilidade: {agilidade}");
+        Console.WriteLine($"Fortitude: {fortitude}");
+        Console.WriteLine("---------------------------\n");
+    }
